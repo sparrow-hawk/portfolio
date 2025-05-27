@@ -4,69 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>김도현의 포트폴리오</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #1a1a1a;
-      margin: 0;
-      padding: 0;
-      color: #f0f0f0;
-    }
-    header {
-      background-color: #2b6cb0;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    section {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      border-bottom: 2px solid #2b6cb0;
-      padding-bottom: 0.5rem;
-    }
-    .project {
-      background: #2a2a2a;
-      padding: 1rem;
-      border: 1px solid #444;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-    footer {
-      background-color: #2d3748;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #ccc;
-    }
-    /* 스킬 영역 */
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-      gap: 1rem;
-      justify-items: center;
-      margin-top: 2rem;
-    }
-    .skills figure {
-      margin: 0;
-      text-align: center;
-      color: #ddd;
-      font-size: 0.9rem;
-    }
-    .skills img {
-      width: 60px;
-      height: 60px;
-      vertical-align: middle;
-      display: block;
-      margin: 0 auto 0.3rem auto;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>김도현의 포트폴리오</h1>
+    <nav>
+      <a href="index.html">자기소개</a> |
+      <a href="education.html">학력</a> |
+      <a href="experience.html">경험</a> |
+      <a href="skills.html">기술</a> |
+      <a href="portfolio.html">포트폴리오</a>
+    </nav>
     <p>C++, Java, Python, HTML/CSS, SQL</p>
   </header>
 
@@ -80,67 +29,6 @@
       이를 통해 비동기 프로그래밍과 API 활용 경험도 쌓고 있습니다.<br />
       지속적으로 프로젝트를 수행하며 실력을 키워나가고 있습니다.
     </p>
-  </section>
-
-  <section id="education">
-    <h2>학력</h2>
-    <p><strong>군산대학교 컴퓨터정보공학과</strong></p>
-  </section>
-
-  <section id="experience">
-    <h2>경험 및 활동</h2>
-    <ul>
-      <li>웹 게시판 프로젝트에서 mireaDB를 연동하여 데이터베이스 기반 CRUD 기능 구현</li>
-      <li>Discord 봇 개발을 통해 비동기 처리와 외부 API 연동 경험</li>
-    </ul>
-  </section>
-
-  <section class="skills">
-    <h2>사용 가능한 언어</h2>
-    <figure>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ 프로그래밍 언어 로고" />
-      <figcaption>C++</figcaption>
-    </figure>
-    <figure>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java 프로그래밍 언어 로고" />
-      <figcaption>Java</figcaption>
-    </figure>
-    <figure>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python 프로그래밍 언어 로고" />
-      <figcaption>Python</figcaption>
-    </figure>
-    <figure>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 로고" />
-      <figcaption>HTML5</figcaption>
-    </figure>
-    <figure>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 로고" />
-      <figcaption>CSS3</figcaption>
-    </figure>
-    <figure>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL 로고" />
-      <figcaption>MySQL</figcaption>
-    </figure>
-  </section>
-
-  <section id="portfolio">
-    <h2>포트폴리오</h2>
-
-    <div class="project">
-      <h3>Python Discord 노래봇</h3>
-      <p>
-        Python의 discord.py 라이브러리를 사용해, 사용자가 음성 채널에서 명령어로 음악을 재생할 수 있는<br />
-        Discord 노래봇을 개발 중입니다. YouTube API와 FFmpeg 등을 연동하여 스트리밍 기능을 구현했습니다.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>mireaDB 연동 게시판 프로젝트</h3>
-      <p>
-        HTML/CSS와 PHP를 이용해 웹 게시판을 구현하고, mireaDB(MySQL 기반)와 연동하여 실시간 데이터 CRUD 기능을 구성했습니다.<br />
-        페이징 처리, 댓글 기능, 사용자 인증 등을 구현하며 실전 데이터베이스 연동 경험을 쌓았습니다.
-      </p>
-    </div>
   </section>
 
   <footer>
