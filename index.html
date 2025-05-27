@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>김도현의 포트폴리오</title>
   <style>
     body {
@@ -41,33 +41,45 @@
       font-size: 0.9rem;
       color: #ccc;
     }
+    /* 스킬 영역 */
     .skills {
-      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 1rem;
+      justify-items: center;
       margin-top: 2rem;
+    }
+    .skills figure {
+      margin: 0;
+      text-align: center;
+      color: #ddd;
+      font-size: 0.9rem;
     }
     .skills img {
       width: 60px;
       height: 60px;
-      margin: 0.5rem;
       vertical-align: middle;
+      display: block;
+      margin: 0 auto 0.3rem auto;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>김도현의 포트폴리오</h1>
-    <p>개발자 지망생 | C++, Java, Python, HTML/CSS, SQL</p>
+    <p>C++, Java, Python, HTML/CSS, SQL</p>
   </header>
 
   <section id="about">
     <h2>자기소개</h2>
-    <p>안녕하세요! 개발자 지망생 <strong>김도현</strong>입니다.<br>
-    C++, Java, HTML/CSS, Python, SQL을 다룰 수 있으며 현재도 계속해서 배우고 있습니다.<br>
-    웹 프로그래밍은 <strong>생활코딩 유튜브 강의</strong>를 참고해 기초부터 직접 실습하며 학습해 왔습니다.<br>
-    최근에는 Discord 플랫폼에 관심을 가져 <strong>Python 기반의 노래봇</strong>을 개발해보고 있으며,<br>
-    이를 통해 비동기 프로그래밍과 API 활용 경험도 쌓고 있습니다.<br>
-    앞으로는 <strong>웹 풀스택</strong> 및 <strong>게임 서버</strong> 분야에 진출하는 것이 목표이며,<br>
-    지속적으로 프로젝트를 수행하며 실력을 키워나가고 있습니다.</p>
+    <p>
+      안녕하세요! 군산대학교 컴퓨터정보공학 <strong>김도현</strong>입니다.<br />
+      C++, Java, HTML/CSS, Python, SQL을 다룰 수 있으며 현재도 계속해서 배우고 있습니다.<br />
+      웹 프로그래밍은 <strong>생활코딩 유튜브 강의</strong>를 참고해 기초부터 직접 실습하며 학습해 왔습니다.<br />
+      최근에는 Discord 플랫폼에 관심을 가져 <strong>Python 기반의 노래봇</strong>을 개발해보고 있으며,<br />
+      이를 통해 비동기 프로그래밍과 API 활용 경험도 쌓고 있습니다.<br />
+      지속적으로 프로젝트를 수행하며 실력을 키워나가고 있습니다.
+    </p>
   </section>
 
   <section id="education">
@@ -85,12 +97,30 @@
 
   <section class="skills">
     <h2>사용 가능한 언어</h2>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+    <figure>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ 프로그래밍 언어 로고" />
+      <figcaption>C++</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java 프로그래밍 언어 로고" />
+      <figcaption>Java</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python 프로그래밍 언어 로고" />
+      <figcaption>Python</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 로고" />
+      <figcaption>HTML5</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 로고" />
+      <figcaption>CSS3</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL 로고" />
+      <figcaption>MySQL</figcaption>
+    </figure>
   </section>
 
   <section id="portfolio">
@@ -98,16 +128,19 @@
 
     <div class="project">
       <h3>Python Discord 노래봇</h3>
-      <p>Python의 discord.py 라이브러리를 사용해, 사용자가 음성 채널에서 명령어로 음악을 재생할 수 있는<br>
-      Discord 노래봇을 개발 중입니다. YouTube API와 FFmpeg 등을 연동하여 스트리밍 기능을 구현했습니다.</p>
+      <p>
+        Python의 discord.py 라이브러리를 사용해, 사용자가 음성 채널에서 명령어로 음악을 재생할 수 있는<br />
+        Discord 노래봇을 개발 중입니다. YouTube API와 FFmpeg 등을 연동하여 스트리밍 기능을 구현했습니다.
+      </p>
     </div>
 
     <div class="project">
       <h3>mireaDB 연동 게시판 프로젝트</h3>
-      <p>HTML/CSS와 PHP를 이용해 웹 게시판을 구현하고, mireaDB(MySQL 기반)와 연동하여 실시간 데이터 CRUD 기능을 구성했습니다.<br>
-      페이징 처리, 댓글 기능, 사용자 인증 등을 구현하며 실전 데이터베이스 연동 경험을 쌓았습니다.</p>
+      <p>
+        HTML/CSS와 PHP를 이용해 웹 게시판을 구현하고, mireaDB(MySQL 기반)와 연동하여 실시간 데이터 CRUD 기능을 구성했습니다.<br />
+        페이징 처리, 댓글 기능, 사용자 인증 등을 구현하며 실전 데이터베이스 연동 경험을 쌓았습니다.
+      </p>
     </div>
-
   </section>
 
   <footer>
