@@ -1,0 +1,33 @@
+body {
+  font-family: 'Verdana', sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff6600;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #ff6600;
+  border-bottom: 2px solid #ff6600;
+  padding-bottom: 0.5rem;
+}
+
+footer {
+  background-color: #333;
+  color: #eee;
+  text-align: center;
+  padding: 1rem;
+}
